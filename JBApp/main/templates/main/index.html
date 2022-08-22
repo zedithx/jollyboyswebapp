@@ -1,0 +1,89 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>JollyBoys Main Page</title>
+    <link rel="icon" href="{% static 'main/images/jollyboy-favicon.ico' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Sora:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+
+    <!--Directory-->
+    <div class="directory">
+        <table class="directory-header">
+            <tr>
+                <th><a href="{% url 'main:index' %}"><img class="small-icon" src="{% static 'main/images/jollyboysicon.jpg' %}"></a></th>
+                <th><a class="link-bar" href="{% url 'main:index' %}">Home</a></th>
+                <th><a class="link-bar" href="{% url 'main:about' %}">About</a></th>
+                <th><img class="brand-title" src="{% static 'main/images/jollyboys-brand-title.png' %}"></th>
+                <th><a style="position:absolute; right:15px; top:0px;" href="#"><img class="small-icon" src="{% static 'main/images/shopping-bag-icon.jpeg' %}"></a></th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Main Content -->
+    <div style="padding-top:5px;" class="container-fluid">
+        <div class="row">
+            <div style="padding:0px;" class="col" >
+                <a class="categories" href="{% url 'catalogue:tees' %}">
+                    <img class="cat-image" style="max-width:100%; max-height:100%;" src="{% static 'main/images/covertee.jpg' %}" alt="covertee">
+                    <h2 class="cat-header">Tees</h2>
+                    <h2 class="cat-popup">Click to see Tees Catalogue</h2>
+                </a>
+            </div>
+            <div style="padding:0px;" class="col">
+                <a class="categories" href="{% url 'catalogue:hoodies_sweater' %}">
+                    <img class="cat-image" style="max-width:100%; max-height:100%;" src="{% static 'main/images/coverhoodie.jpg' %}" alt="coverhoodie">
+                    <h2 class="cat-header">Hoodies/Sweaters</h2>
+                    <h2 class="cat-popup">Click to see Hoodies/Sweaters Catalogue</h2>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div style="padding:0px;" class="col">
+                <a class="categories" href="{% url 'catalogue:pants' %}">
+                    <img class="cat-image" style="max-width:100%; max-height:100%;" src="{% static 'main/images/coverpants.jpg' %}" alt="coverpants">
+                    <h2 class="cat-header">Pants</h2>
+                    <h2 class="cat-popup">Click to see Pants Catalogue</h2>
+                </a>
+            </div>
+            <div style="padding:0px;" class="col">
+                <a class="categories" href="{% url 'catalogue:exclusive_apparel' %}">
+                    <img class="cat-image" style="max-width:100%; max-height:100%;" src="{% static 'main/images/coverexclusive.jpg' %}" alt="coverexclusive">
+                    <h2 class="cat-header">Exclusive Apparel</h2>
+                    <h2 class="cat-popup">Click to see Exclusive Apparel Catalogue</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Social media tag-->
+    <div class="pt-3 container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <a class="media-bar" target="_blank" href="https://instagram.com/jollyboys.vtg?utm_medium=copy_link">
+                    <img class="small-icon" src="{% static 'main/images/instagram-icon.png' %}">
+                </a>
+            </div>
+            <div class="pt-2 col-md-auto">
+                <a class="media-bar" target="_blank" href="https://instagram.com/jollyboys.vtg?utm_medium=copy_link">Instagram</a>
+            </div>
+        </div>
+        <div class="pt-3 pb-3 row justify-content-md-center">
+            <div class="col-md-auto">
+                <a class="media-bar" target="_blank" href="https://www.tiktok.com/@jollyboysvtg?_t=8UbxfX7UTtS">
+                    <img class="small-icon" src="{% static 'main/images/tiktok-icon.png' %}">
+                </a>
+            </div>
+            <div class="pt-3 pe-5 col-md-auto">
+                <a class="media-bar" target="_blank" href="https://www.tiktok.com/@jollyboysvtg?_t=8UbxfX7UTtS">Tiktok</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

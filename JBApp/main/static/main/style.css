@@ -1,0 +1,133 @@
+div.grey-section{
+    background-color: #F0F0F3;
+    height: 50px;
+}
+
+a.link-bar{
+    text-decoration: none;
+    color: black;
+}
+
+div.directory{
+    height: 60px;
+    box-shadow: 0px 0px black;
+    position: relative;
+}
+
+table.directory-header{
+    display: inline-block;
+    font-family: 'Sora', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.brand-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+img.small-icon{
+    display: inline-block;
+    max-width:50px;
+}
+
+th{
+    padding: 0px 15px;
+}
+
+div.main-content{
+    margin: 30px;
+}
+
+img.icon{
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*div.message{*/
+/*    text-align: center;*/
+/*    font-size: 35px;*/
+/*    margin-bottom: 20px;*/
+/*    margin-top: 20px;*/
+/*    font-family: Marker Felt, fantasy;*/
+/*}*/
+
+a.media-bar{
+    text-decoration: none;
+    color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: larger;
+}
+
+a:hover{
+    color: forestgreen;
+}
+
+div.col{
+    position: relative;
+}
+
+a.categories:hover .cat-image{
+    background: #000;
+    opacity: 0.7;
+    transition: opacity 0.7s;
+}
+
+a.categories:hover .cat-header{
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+a.categories:hover .cat-popup{
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+
+h2.cat-header{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    font-family: 'Sora', sans-serif;
+    color: black;
+    font-size: 50px;
+}
+
+h2.cat-popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sora', sans-serif;
+    color: black;
+    font-size: 40px;
+    opacity: 0;
+}
+
+.listing-title{
+    max-width: 250px;
+    margin-bottom: 5px;
+}
+
+.listing-desc{
+    display: inline-block;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    font-size: 16px;
+    filter: brightness(1.5);
+}
+
+.listing-price{
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+.cart-button{
+    display: block;
+}
+
