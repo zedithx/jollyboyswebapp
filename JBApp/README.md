@@ -5,7 +5,7 @@ python manage.py runserver
 #or
 python3 manage.py runserver
 ```
-If not working, make sure to run in incognito mode and remove the s from http.
+If not working, make sure to run in incognito mode and remove the s from https
 
 # Navigating
 There are 4 main pages for now. The main page, catalogue, about page, and the admin page.
